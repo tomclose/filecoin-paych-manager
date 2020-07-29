@@ -1,8 +1,8 @@
 {
-  "name": "y",
-  "version": "0.0.0",
+  "name": "paych-manager",
+  "version": "0.0.1",
   "description": "A filecoin payment channel manager",
-  "main": "index.js",
+  "main": "build/index.js",
   "author": "Tom Close",
   "license": "MIT",
   "private": false,
@@ -11,18 +11,23 @@
     "build": "rimraf ./build && tsc",
     "lint": "eslint . --ext .ts",
     "lint-and-fix": "eslint . --ext .ts --fix",
-    "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write"
+    "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write",
+    "test": "npx jest --runInBand --detectOpenHandles --colors --verbose",
+    "test:ci": "npx jest --ci --runInBand --silent --colors --coverage"
   },
   "devDependencies": {
+    "@types/jest": "^26.0.7",
     "@types/node": "^14.0.27",
     "@typescript-eslint/eslint-plugin": "^3.7.1",
     "@typescript-eslint/parser": "^3.7.1",
     "eslint": "^7.5.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.4",
+    "jest": "^26.1.0",
     "nodemon": "^2.0.4",
     "prettier": "^2.0.5",
     "rimraf": "^3.0.2",
+    "ts-jest": "^26.1.4",
     "ts-node": "^8.10.2",
     "typescript": "^3.9.7"
   }
