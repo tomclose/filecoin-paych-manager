@@ -271,6 +271,30 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
+"@filecoin-shipyard/lotus-client-provider-browser@^0.0.14":
+  version "0.0.14"
+  resolved "https://registry.yarnpkg.com/@filecoin-shipyard/lotus-client-provider-browser/-/lotus-client-provider-browser-0.0.14.tgz#28268cd1a940627b08e06378527f5f34fea0db75"
+  integrity sha512-rFH2aUA65fa9C+3d8JoKxL/UGYPbEqIjhJ9ZMJS50aKFELMA1FJ/l10Tpgkx0p6KrdygfIytHneITvpgcumR4g==
+
+"@filecoin-shipyard/lotus-client-provider-nodejs@^0.0.5":
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/@filecoin-shipyard/lotus-client-provider-nodejs/-/lotus-client-provider-nodejs-0.0.5.tgz#e7e27b13eb5b1892454ff72c8060c6f845ee0bf6"
+  integrity sha512-alYbMEYr5M/U/n97eWSWvIi79pZBFhUdS+NEJSpVUhZBzR1iIKKSr0MxL0zXdMTFV5C/UbVKNJy72JaSAvS9oA==
+  dependencies:
+    "@filecoin-shipyard/lotus-client-provider-browser" "^0.0.14"
+    node-fetch "^2.6.0"
+    ws "^7.3.0"
+
+"@filecoin-shipyard/lotus-client-rpc@^0.0.11":
+  version "0.0.11"
+  resolved "https://registry.yarnpkg.com/@filecoin-shipyard/lotus-client-rpc/-/lotus-client-rpc-0.0.11.tgz#60d6953dee4ff583ca982aae45d57e05a68ad89b"
+  integrity sha512-7ZgT7tyB+5fp5mC9yC4Da9vj3M8PiVPNuxFkFAaDRu8blDuKg/tNh4OMZr5pqs/uuwjRZuXslGl8dOb2Iz+rZg==
+
+"@filecoin-shipyard/lotus-client-schema@^0.0.12":
+  version "0.0.12"
+  resolved "https://registry.yarnpkg.com/@filecoin-shipyard/lotus-client-schema/-/lotus-client-schema-0.0.12.tgz#5da274b11e1d306a79e8a09e6dd01d3a77b838e8"
+  integrity sha512-wwqarwcUtqpy1pKq4o0jWM5ppbYxsnMZ5uQZ+WJ8dJmNiJuVTz6GjCtWNaCa+4kw2GgfkItj2BIjzweL7/5QNA==
+
 "@istanbuljs/load-nyc-config@^1.0.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@istanbuljs/load-nyc-config/-/load-nyc-config-1.1.0.tgz#fd3db1d59ecf7cf121e80650bb86712f9b55eced"
@@ -3089,6 +3113,11 @@ nice-try@^1.0.4:
   resolved "https://registry.yarnpkg.com/nice-try/-/nice-try-1.0.5.tgz#a3378a7696ce7d223e88fc9b764bd7ef1089e366"
   integrity sha512-1nh45deeb5olNY7eX82BkPO7SSxR5SSYJiPTrTdFUVYwAl8CKMA5N9PjTYkHiRjisVcxcQ1HXdLhx2qxxJzLNQ==
 
+node-fetch@^2.6.0:
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.0.tgz#e633456386d4aa55863f676a7ab0daa8fdecb0fd"
+  integrity sha512-8dG4H5ujfvFiqDmVu9fQ5bOHUC15JMjMY/Zumv26oOvvVJjM67KF8koCWIabKQ1GJIa9r2mMZscBq/TbdOcmNA==
+
 node-int64@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/node-int64/-/node-int64-0.4.0.tgz#87a9065cdb355d3182d8f94ce11188b825c68a3b"
@@ -4476,7 +4505,7 @@ write@1.0.3:
   dependencies:
     mkdirp "^0.5.1"
 
-ws@^7.2.3:
+ws@^7.2.3, ws@^7.3.0:
   version "7.3.1"
   resolved "https://registry.yarnpkg.com/ws/-/ws-7.3.1.tgz#d0547bf67f7ce4f12a72dfe31262c68d7dc551c8"
   integrity sha512-D3RuNkynyHmEJIpD2qrgVkc9DQ23OrN/moAwZX4L8DfvszsJxpjQuUq3LMx6HoYji9fbIOBY18XWBsAux1ZZUA==

@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "typeRoots": ["./node_modules/@types", "./typings"],
     "target": "es5",
     "module": "commonjs",
     "lib": ["es6"],
@@ -16,5 +17,6 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
   },
-  "exclude": ["jest.config.js", "build"]
+  "exclude": ["jest.config.js", "build"],
+  "include": ["src"]
 }
