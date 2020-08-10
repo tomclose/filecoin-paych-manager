@@ -7,8 +7,9 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "start:dev": "nodemon",
-    "start": "yarn build && node build/index.js",
+    "start:watch": "nodemon",
+    "start": "npx ts-node src/index.ts",
+    "start:built": "yarn build && node build/index.js",
     "build": "rimraf ./build && tsc",
     "lint": "eslint . --ext .ts",
     "lint-and-fix": "eslint . --ext .ts --fix",
