@@ -8,15 +8,17 @@ I'm trying (and failing 😕) to get a payment channel to open.
 I've followed the instructions [here](https://docs.filecoin.io/build/examples/network-inspector/step-1-start-lotus-devnet-and-go-ipfs/#steps) to setup a local lotus devnet:
 
 ```
-git clone git@github.com:filecoin-shipyard/lotus-devnet.git
-cd lotus-devnet
-make devnet BIGSECTORS=false
+▶ git clone git@github.com:filecoin-shipyard/lotus-devnet.git
+▶ cd lotus-devnet
+▶ git rev-parse --short HEAD
+73b3ebe
+▶ make devnet BIGSECTORS=false
 ```
 
 To get going with this codebase you'll need node and yarn installed. You can then run
 
 ```
-yarn
+▶ yarn
 ```
 
 to install the dependencies and then `yarn start` to run [this code](./src/index.ts).
